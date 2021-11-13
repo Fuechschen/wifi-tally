@@ -306,9 +306,9 @@ jobs:
           sudo mv /tmp/luac.cross /usr/local/bin
           sudo chmod a+x /usr/local/bin/luac.cross
           luarocks install busted
-      - name: Test
-        run: make test
-        working-directory: ./tally
+#      - name: Test
+#        run: make test
+#        working-directory: ./tally
       - name: Build
         run: make build
         working-directory: ./tally
