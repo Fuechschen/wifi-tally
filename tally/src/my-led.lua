@@ -178,19 +178,19 @@ local dim = false
 _G.MyLed = {
     -- signal that nothing is being done
     initial = function()
-        showStaticColor(0, 0, 255, 0, 0, 0)
+        showStaticColor(0, 0, 63, 0, 0, 0)
     end,
     waitForWifiConnection = function()
-        showFlashPattern(0, 0, 255, 0, 0, 0, {bright, dim}, 500)
+        showFlashPattern(0, 0, 63, 0, 0, 0, {bright, dim}, 500)
     end,
     invalidSettingsFile = function()
-        showFlashPattern(0, 0, 255, 0, 0, 0, {bright, dim, bright, dim, bright, dim, dim, dim, dim, dim, dim, dim}, 150)
+        showFlashPattern(0, 0, 63, 0, 0, 0, {bright, dim, bright, dim, bright, dim, dim, dim, dim, dim, dim, dim}, 150)
     end,
     waitForWifiIp = function()
-        showFlashPattern(0, 0, 255, 0, 0, 0, {bright, dim, bright, dim}, 250)
+        showFlashPattern(0, 0, 63, 0, 0, 0, {bright, dim, bright, dim}, 250)
     end,
     waitForServerConnection = function()
-        showFlashPattern(0, 0, 255, 0, 0, 0, {bright, dim, bright, dim, dim, dim}, 150)
+        showFlashPattern(0, 0, 63, 0, 0, 0, {bright, dim, bright, dim, dim, dim}, 150)
     end,
     -- all other flash patterns are directly sent by the hub
     static = showStaticColor,
